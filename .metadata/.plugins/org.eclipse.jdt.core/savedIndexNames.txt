@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\masfi\OneDrive\Desktop\Basic Java 2\.metadata\.plugins\org.eclipse.jdt.core
+3803894794.index
+2693018335.index
+1865797976.index

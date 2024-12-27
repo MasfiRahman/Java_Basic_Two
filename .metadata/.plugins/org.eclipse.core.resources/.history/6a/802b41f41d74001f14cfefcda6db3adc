@@ -1,0 +1,42 @@
+package com.mycompany.javaarratbasics;
+
+import java.util.Scanner;
+
+
+public class PrimeChecke {
+
+	public static void main(String[] args) {
+		
+		int number;
+		boolean isPrime = true;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter element: ");
+		
+		number = sc.nextInt();
+		
+		if (number <= 1)
+		{
+			isPrime = false;
+		}
+		for(int i = 2; i < number/2; i++)
+		{
+			if(number % i == 0) 
+			{
+				isPrime = false;
+			}
+			
+		}
+		
+		if(isPrime)
+		{
+			System.out.println("It is a Prime Number");
+		}
+		else
+		{
+			System.out.println("It is not a Prime Number");
+		
+
+	}
+
+}

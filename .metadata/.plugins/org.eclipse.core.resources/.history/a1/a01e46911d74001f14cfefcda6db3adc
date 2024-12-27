@@ -1,0 +1,55 @@
+package com.mycompany.javaarratbasics;
+   import java.util.Scanner;
+      
+
+public class PrimeArrayChecker {
+
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        
+        int[] numbers = new int[n];
+        
+       
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+        
+     
+        boolean foundPrime = false;
+        System.out.print("Prime numbers in the array: ");
+        for (int number : numbers) {
+            if (isPrime(number)) {
+                System.out.print(number + " ");
+                foundPrime = true;
+            }
+        }
+        
+        if (!foundPrime) {
+            System.out.println("The array does not contain any prime numbers.");
+        }
+        
+        scanner.close();
+    }
+    
+    
+    public static boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= number / 2; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+	}
+
+}
